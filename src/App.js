@@ -10,7 +10,7 @@ function App() {
 
     const handleSubmit = async () => {
         try {
-            const response = await axios.post('https://bajaj-finserv-backend-21-bai-10442.vercel.app/bfhl', JSON.parse(jsonInput));
+            const response = await axios.post('https://bajaj-finserv-backend-21bai10442.onrender.com/bfhl', JSON.parse(jsonInput));
             setResponseData(response.data);
         } catch (error) {
             console.error('Error submitting JSON', error);
